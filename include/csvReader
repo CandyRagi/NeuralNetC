@@ -1,0 +1,16 @@
+#include<iostream>
+using namespace std;
+
+class csvReader
+{	
+	private: 
+		
+		int * data;
+		
+	public:
+		int row;
+		int column;
+
+
+
+}
