@@ -35,7 +35,7 @@ class csvReader
 
 
                         getline(file,line);
-                        line+'\n';
+                        line+='\n';
                         for(int i=0;line[i]!='\n';i++)
                         {
                                 if(line[i]==',')
@@ -50,11 +50,22 @@ class csvReader
                                 this->row++;
                         }
 
+                        cout<<"Columns: "<<this->col<<" Rows: " <<this->row<<endl<<endl;
+
+                        this->dataSet=new string[this->row*this->col];
+
+                        file.clear();
+                        file.seekg(0,ios::beg); //Restart from top
+                        
+                        getline(file,line);
+
+
+                        
+
+                                                
+
 
                 }
 
-
-
-
-}
+};
 
